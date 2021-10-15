@@ -1,3 +1,3 @@
 # be-adoptive
 
-Attempt to implement this:  https://github.com/WICG/webcomponents/issues/909
+Attempt to implement this:  https://github.com/WICG/webcomponents/issues/909#issuecomment-786965491
