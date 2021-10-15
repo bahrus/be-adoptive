@@ -1,0 +1,19 @@
+{
+  "name": "be-adoptive",
+  "version": "0.0.0",
+  "description": "Attempt to implement this:  https://github.com/WICG/webcomponents/issues/909",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahrus/be-adoptive.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahrus/be-adoptive/issues"
+  },
+  "homepage": "https://github.com/bahrus/be-adoptive#readme"
+}
