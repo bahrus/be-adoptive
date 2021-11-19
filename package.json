@@ -1,8 +1,24 @@
 {
   "name": "be-adoptive",
   "version": "0.0.0",
-  "description": "Attempt to implement this:  https://github.com/WICG/webcomponents/issues/909",
-  "main": "index.js",
+  "description": "e-adoptive allows Shadow DOM to inherit styles from the parent element.",
+  "main": "be-adoptive.js",
+  "module": "be-adoptive.js",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements",
+    "shadow-dom"
+  ],
+  "files":[
+    "*.*"
+  ],
+  "exports":{
+    ".": "./be-adoptive.js",
+    "./be-adoptive.js": "./be-adoptive.js"
+  },
+  "types": "types.d.ts",
   "scripts": {
     "serve": "node node_modules/xtal-test/serve.js",
     "package-check": "package-check",
