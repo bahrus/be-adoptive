@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "be-decorated": "0.0.43",
+    "be-hive": "0.0.9"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bahrus/be-adoptive.git"
