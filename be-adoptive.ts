@@ -4,7 +4,21 @@ import {register} from 'be-hive/register.js';
 
 export class BeAdoptiveController implements BeAdoptiveActions{
     intro(proxy: HTMLTemplateElement & BeAdoptiveVirtualProps, target: HTMLStyleElement, beDecorProps: BeDecoratedProps): void {
-        target.textContent = proxy.textContent;
+        const host = (<any>target.getRootNode()).host;
+        if(host === undefined) return;
+        const rn = host.getRootNode();
+        const stylesheets = rn.styleSheets;
+        
+        const targetSheet = new CSSStyleSheet();
+        for(const stylesheet of stylesheets){
+            console.log(stylesheet);
+            for(const rule of stylesheet.cssRules){
+                targetSheet.insertRule(rule.cssText, targetSheet.cssRules.length);
+            }
+        }
+        
+        
+        (<any>target.getRootNode()!).adoptedStyleSheets = [targetSheet];
     }
 
 }
