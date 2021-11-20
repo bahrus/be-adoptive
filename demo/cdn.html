@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <div>
+        <template shadowroot="open">
+            <style be-adoptive>
+                div{
+                    color: green;
+                }
+            </style>
+            <span>Hello</span>
+            <be-hive></be-hive>
+        </template>
+    </div>
+    <span>Hello</span>
+    <be-hive></be-hive>
+    
+    <script type=module>
+        import 'https://cdn.skypack.dev/be-adoptive';
+        import 'https://cdn.skypack.dev/be-hive';
+    </script>
+</body>
+</html>
