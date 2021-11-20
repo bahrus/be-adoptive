@@ -8,7 +8,13 @@ This provides a way to benefit from the slotting Shadow DOM provides, while bein
 
 <a href="https://nodei.co/npm/be-adoptive/"><img src="https://nodei.co/npm/be-adoptive.png"></a>
 
-## [Demo](https://codepen.io/bahrus/pen/porYqaz)
+## [Demo](https://codepen.io/bahrus/pen/porYqaz)  
+
+Demo only works in Chrome without polyfills (declarative shadow DOM, [constructible stylesheets](https://github.com/calebdwilliams/construct-style-sheets)).
+
+Native support in Firefox is [experimental](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features#constructable_stylesheets).
+
+Here's to hoping it is adopted soon by Safari.
 
 ## Syntax:
 
