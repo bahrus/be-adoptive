@@ -11,7 +11,6 @@ export class BeAdoptiveController implements BeAdoptiveActions{
         
         const targetSheet = new CSSStyleSheet();
         for(const stylesheet of stylesheets){
-            console.log(stylesheet);
             for(const rule of stylesheet.cssRules){
                 targetSheet.insertRule(rule.cssText, targetSheet.cssRules.length);
             }

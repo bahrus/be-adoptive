@@ -25,8 +25,8 @@
     "doc": "custom-elements-manifest analyze"
   },
   "dependencies": {
-    "be-decorated": "0.0.43",
-    "be-hive": "0.0.9"
+    "be-decorated": "0.0.44",
+    "be-hive": "0.0.13"
   },
   "devDependencies": {
     "xtal-test": "0.0.52",
@@ -37,7 +37,7 @@
     "type": "git",
     "url": "git+https://github.com/bahrus/be-adoptive.git"
   },
-  "author": "",
+  "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahrus/be-adoptive/issues"
