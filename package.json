@@ -25,8 +25,8 @@
     "doc": "custom-elements-manifest analyze"
   },
   "dependencies": {
-    "be-decorated": "0.0.44",
-    "be-hive": "0.0.13"
+    "be-decorated": "0.0.65",
+    "be-hive": "0.0.20"
   },
   "devDependencies": {
     "xtal-test": "0.0.52",
