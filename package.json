@@ -25,11 +25,11 @@
     "doc": "custom-elements-manifest analyze"
   },
   "dependencies": {
-    "be-decorated": "0.0.65",
-    "be-hive": "0.0.20"
+    "be-decorated": "0.0.72",
+    "be-hive": "0.0.21"
   },
   "devDependencies": {
-    "xtal-test": "0.0.52",
+    "xtal-test": "0.0.55",
     "@skypack/package-check": "0.2.2",
     "@custom-elements-manifest/analyzer": "0.5.7"
   },
