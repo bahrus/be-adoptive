@@ -25,7 +25,7 @@ define({
         propDefaults: {
             upgrade,
             ifWantsToBe,
-            forceVisible: true,
+            forceVisible: ['style'],
             virtualProps: [],
             intro: 'intro'
         }
