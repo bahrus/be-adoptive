@@ -10,6 +10,10 @@ This provides a way to benefit from the slotting Shadow DOM provides, while bein
 
 <a href="https://nodei.co/npm/be-adoptive/"><img src="https://nodei.co/npm/be-adoptive.png"></a>
 
+[![How big is this package in your project?](https://img.shields.io/bundlephobia/minzip/be-adoptive?style=for-the-badge)](https://bundlephobia.com/result?p=be-adoptive)
+
+<img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/be-adoptive?compression=gzip">
+
 ## [Demo](https://codepen.io/bahrus/pen/porYqaz)  
 
 Demo only works in Chrome without polyfills (declarative shadow DOM, [constructible stylesheets](https://github.com/calebdwilliams/construct-style-sheets)).
