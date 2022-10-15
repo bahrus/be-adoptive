@@ -1,4 +1,4 @@
-import { define } from 'be-decorated/be-decorated.js';
+import { define } from 'be-decorated/DE.js';
 import { register } from 'be-hive/register.js';
 export class BeAdoptiveController {
     intro(proxy, target, beDecorProps) {

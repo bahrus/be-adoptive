@@ -6,6 +6,8 @@ This provides a way to benefit from the slotting Shadow DOM provides, while bein
 
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/be-adoptive)
 
+[![Playwright Tests](https://github.com/bahrus/be-adoptive/actions/workflows/CI.yml/badge.svg?branch=baseline)](https://github.com/bahrus/be-adoptive/actions/workflows/CI.yml)
+
 <a href="https://nodei.co/npm/be-adoptive/"><img src="https://nodei.co/npm/be-adoptive.png"></a>
 
 ## [Demo](https://codepen.io/bahrus/pen/porYqaz)  
