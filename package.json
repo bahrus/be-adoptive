@@ -26,8 +26,8 @@
     "doc": "custom-elements-manifest analyze"
   },
   "dependencies": {
-    "be-decorated": "0.0.179",
-    "be-hive": "0.0.74"
+    "be-decorated": "0.0.182",
+    "be-hive": "0.0.76"
   },
   "devDependencies": {
     "may-it-serve": "0.0.3",
