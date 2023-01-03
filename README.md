@@ -20,7 +20,6 @@ Demo only works in Chrome without polyfills (declarative shadow DOM, [constructi
 
 Native support in Firefox and Safari for constructible stylesheets is now available!
 
-Here's to hoping it is adopted soon by Safari.
 
 ## Syntax:
 
@@ -49,7 +48,7 @@ To be fully HTML5 compatible, use data-be-adoptive instead of be-adoptive.
 
 The be-hive component allows us to specify an alternative attribute name, and acts as a "conduit" for all the [be-*](https://github.com/bahrus?tab=repositories&q=be-&type=&language=&sort=) components.  Alternatively, we can place an instance of the be-adoptive web component in our shadow DOM, and that will have the same effect.
 
-> **Note**: It has become clear to me, after [following](https://pinafore.social/statuses/109621173690604609) a discussion of alternatives [open-stylable](https://github.com/nolanlawson/open-stylable), that this solution is far from complete.  To be complete, the platform would need to provide a mechanism to subscribe to additions / removals of stylesheets from any Shadow DOM realm.  Or implement [this proposal](https://github.com/WICG/webcomponents/issues/909).
+> **Note**: It has become clear to me, after [following](https://pinafore.social/statuses/109621173690604609) a discussion of an alternative [open-stylable](https://github.com/nolanlawson/open-stylable), that this solution is far from complete.  To be complete, the platform would need to provide a mechanism to subscribe to additions / removals of stylesheets from any Shadow DOM realm.  Or implement [this proposal](https://github.com/WICG/webcomponents/issues/909), which would render this behavior obsolete (which would be great).
 
 ## Viewing Locally
 
