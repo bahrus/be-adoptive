@@ -26,12 +26,12 @@
     "doc": "custom-elements-manifest analyze"
   },
   "dependencies": {
-    "be-decorated": "0.0.182",
-    "be-hive": "0.0.76"
+    "be-decorated": "0.0.217",
+    "be-hive": "0.0.79"
   },
   "devDependencies": {
-    "may-it-serve": "0.0.3",
-    "@playwright/test": "1.27.1",
+    "may-it-serve": "0.0.4",
+    "@playwright/test": "1.29.1",
     "@skypack/package-check": "0.2.2",
     "@custom-elements-manifest/analyzer": "0.6.4"
   },
