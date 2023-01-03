@@ -9,24 +9,36 @@
 <body>
     <style>
         span{
-            color: red;
+          color: red;
         }
-    </style>
-    <div>
+      </style>
+      <div>
         <template shadowroot="open">
-            <style be-adoptive>
-                div{
-                    color: green;
-                }
-            </style>
-            <span>Hello</span>
-            <be-hive></be-hive>
+          <style be-adoptive>
+            div{
+              color: green;
+            }
+          </style>
+          <span>Hello</span>
+          <be-hive></be-hive>
         </template>
-    </div>
-    <span>Hello</span>
-    
-    <script type=module>
-        import 'https://cdn.skypack.dev/be-adoptive';
-    </script>
+      </div>
+      <span>Hello</span>
+      
+      <script type=module>
+        import 'https://cdn.skypack.dev/be-adoptive@0.0.11';
+      </script>
+      
+          <script>
+          (function attachShadowRoots(root) {
+              root.querySelectorAll("template[shadowroot]").forEach(template => {
+              const mode = template.getAttribute("shadowroot");
+              const shadowRoot = template.parentNode.attachShadow({ mode });
+              shadowRoot.appendChild(template.content);
+              template.remove();
+              attachShadowRoots(shadowRoot);
+              });
+          })(document);
+          </script>
 </body>
 </html>
