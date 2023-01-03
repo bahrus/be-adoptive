@@ -4,7 +4,8 @@ import {register} from 'be-hive/register.js';
 
 export class BeAdoptiveController implements BeAdoptiveActions{
     intro(proxy: HTMLTemplateElement & BeAdoptiveVirtualProps, target: HTMLStyleElement, beDecorProps: BeDecoratedProps): void {
-        const host = (<any>target.getRootNode()).host;
+        const targetRN = target.getRootNode();
+        const host = (<any>targetRN).host;
         if(host === undefined) return;
         const rn = host.getRootNode();
         const stylesheets = rn.styleSheets;
@@ -17,7 +18,7 @@ export class BeAdoptiveController implements BeAdoptiveActions{
         }
         
         
-        (<any>target.getRootNode()!).adoptedStyleSheets = [targetSheet];
+        (<any>targetRN).adoptedStyleSheets = [targetSheet];
     }
 
 }
