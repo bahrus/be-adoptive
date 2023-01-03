@@ -23,7 +23,8 @@
     "test": "playwright test",
     "serve": "node node_modules/may-it-serve/serve.js",
     "package-check": "package-check",
-    "doc": "custom-elements-manifest analyze"
+    "doc": "custom-elements-manifest analyze",
+    "safari": "npx playwright wk http://localhost:3030"
   },
   "dependencies": {
     "be-decorated": "0.0.217",
