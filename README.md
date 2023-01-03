@@ -18,7 +18,7 @@ This provides a way to benefit from the slotting Shadow DOM provides, while bein
 
 Demo only works in Chrome without polyfills (declarative shadow DOM, [constructible stylesheets](https://github.com/calebdwilliams/construct-style-sheets)).
 
-Native support in Firefox is [experimental](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features#constructable_stylesheets).
+Native support in Firefox for constructible stylesheets is now available!
 
 Here's to hoping it is adopted soon by Safari.
 
