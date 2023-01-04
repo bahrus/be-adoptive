@@ -16,7 +16,6 @@ This provides a way to benefit from the slotting Shadow DOM provides, while bein
 
 ## [Demo](https://codepen.io/bahrus/pen/porYqaz)  
 
-Demo only works in Chrome without polyfills (declarative shadow DOM).
 
 Native support in Firefox and Safari for constructible stylesheets is now available!
 

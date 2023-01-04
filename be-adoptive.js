@@ -2,7 +2,8 @@ import { define } from 'be-decorated/DE.js';
 import { register } from 'be-hive/register.js';
 export class BeAdoptiveController {
     intro(proxy, target, beDecorProps) {
-        const host = target.getRootNode().host;
+        const targetRN = target.getRootNode();
+        const host = targetRN.host;
         if (host === undefined)
             return;
         const rn = host.getRootNode();
@@ -13,7 +14,7 @@ export class BeAdoptiveController {
                 targetSheet.insertRule(rule.cssText, targetSheet.cssRules.length);
             }
         }
-        target.getRootNode().adoptedStyleSheets = [targetSheet];
+        targetRN.adoptedStyleSheets = [targetSheet];
     }
 }
 const tagName = 'be-adoptive';
