@@ -12,8 +12,6 @@
 		"be-adoptive.ts"
 	],
 	"exclude":[
-		"build",
-		"bower_components",
 		"node_modules"
 	]
 

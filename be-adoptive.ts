@@ -1,10 +1,20 @@
-import {define, BeDecoratedProps} from 'be-decorated/DE.js';
-import {BeAdoptiveVirtualProps, BeAdoptiveProps, BeAdoptiveActions} from './types';
+import {BE, propDefaults, propInfo} from 'be-enhanced/BE.js';
+import {BEConfig, EnhancementInfo} from 'be-enhanced/types';
+import {XE} from 'xtal-element/XE.js';
+import {Actions, AllProps, AP, PAP, ProPAP, POA} from './types';
 import {register} from 'be-hive/register.js';
 
-export class BeAdoptiveController implements BeAdoptiveActions{
-    intro(proxy: HTMLTemplateElement & BeAdoptiveVirtualProps, target: HTMLStyleElement, beDecorProps: BeDecoratedProps): void {
-        const targetRN = target.getRootNode();
+export class BeAdoptive extends BE<AP, Actions, HTMLStyleElement> implements Actions{
+    static  override get beConfig(){
+        return {
+            parse: false,
+            //primaryProp: 'to'
+        } as BEConfig
+    }
+
+    override async attach(enhancedElement: HTMLStyleElement, enhancementInfo: EnhancementInfo): Promise<void> {
+        await super.attach(enhancedElement, enhancementInfo);
+        const targetRN = enhancedElement.getRootNode();
         const host = (<any>targetRN).host;
         if(host === undefined) return;
         const rn = host.getRootNode();
@@ -20,33 +30,28 @@ export class BeAdoptiveController implements BeAdoptiveActions{
         
         (<any>targetRN).adoptedStyleSheets = [targetSheet];
     }
-
 }
 
-export interface BeAdoptiveController extends BeAdoptiveProps{}
+export interface BeAdoptive extends AllProps{}
 
 const tagName = 'be-adoptive';
-
 const ifWantsToBe = 'adoptive';
-
 const upgrade = 'style';
 
-define<BeAdoptiveProps & BeDecoratedProps<BeAdoptiveProps, BeAdoptiveActions>, BeAdoptiveActions>({
+const xe = new XE<AP, Actions>({
     config:{
         tagName,
         propDefaults:{
-            upgrade,
-            ifWantsToBe,
-            forceVisible: ['style'],
-            virtualProps:[],
-            intro: 'intro'
+            ...propDefaults,
+        },
+        propInfo:  {
+            ...propInfo
+        },
+        actions: {
+
         }
     },
-    complexPropDefaults:{
-        controller:BeAdoptiveController
-    },
+    superclass: BeAdoptive
 });
 
 register(ifWantsToBe, upgrade, tagName);
-
-

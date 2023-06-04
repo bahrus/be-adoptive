@@ -1,8 +1,16 @@
-import { define } from 'be-decorated/DE.js';
+import { BE, propDefaults, propInfo } from 'be-enhanced/BE.js';
+import { XE } from 'xtal-element/XE.js';
 import { register } from 'be-hive/register.js';
-export class BeAdoptiveController {
-    intro(proxy, target, beDecorProps) {
-        const targetRN = target.getRootNode();
+export class BeAdoptive extends BE {
+    static get beConfig() {
+        return {
+            parse: false,
+            //primaryProp: 'to'
+        };
+    }
+    async attach(enhancedElement, enhancementInfo) {
+        await super.attach(enhancedElement, enhancementInfo);
+        const targetRN = enhancedElement.getRootNode();
         const host = targetRN.host;
         if (host === undefined)
             return;
@@ -20,19 +28,17 @@ export class BeAdoptiveController {
 const tagName = 'be-adoptive';
 const ifWantsToBe = 'adoptive';
 const upgrade = 'style';
-define({
+const xe = new XE({
     config: {
         tagName,
         propDefaults: {
-            upgrade,
-            ifWantsToBe,
-            forceVisible: ['style'],
-            virtualProps: [],
-            intro: 'intro'
-        }
+            ...propDefaults,
+        },
+        propInfo: {
+            ...propInfo
+        },
+        actions: {}
     },
-    complexPropDefaults: {
-        controller: BeAdoptiveController
-    },
+    superclass: BeAdoptive
 });
 register(ifWantsToBe, upgrade, tagName);
