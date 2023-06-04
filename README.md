@@ -29,7 +29,7 @@ Native support in Firefox and Safari for constructible stylesheets is now availa
     }
 </style>
 <div>
-    <template shadowroot="open">
+    <template shadowrootmode="open">
         <style be-adoptive>
             div{
                 color: green;
