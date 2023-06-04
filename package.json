@@ -1,6 +1,6 @@
 {
   "name": "be-adoptive",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "be-adoptive allows Shadow DOM to inherit styles from the parent element.",
   "main": "be-adoptive.js",
   "module": "be-adoptive.js",
