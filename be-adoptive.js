@@ -1,6 +1,5 @@
 import { BE, propDefaults, propInfo } from 'be-enhanced/BE.js';
 import { XE } from 'xtal-element/XE.js';
-import { register } from 'be-hive/register.js';
 export class BeAdoptive extends BE {
     static get beConfig() {
         return {
@@ -25,9 +24,7 @@ export class BeAdoptive extends BE {
         targetRN.adoptedStyleSheets = [targetSheet];
     }
 }
-const tagName = 'be-adoptive';
-const ifWantsToBe = 'adoptive';
-const upgrade = 'style';
+export const tagName = 'be-adoptive';
 const xe = new XE({
     config: {
         tagName,
@@ -41,4 +38,3 @@ const xe = new XE({
     },
     superclass: BeAdoptive
 });
-register(ifWantsToBe, upgrade, tagName);

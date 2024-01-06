@@ -5,11 +5,10 @@
 		"sourceMap": false,
 		"experimentalDecorators": false,
 		"newLine": "LF",
-		"strict": true,
-		"watch": true
+		"strict": true
 	},
 	"files": [
-		"be-adoptive.ts"
+		"behivior.ts"
 	],
 	"exclude":[
 		"node_modules"
